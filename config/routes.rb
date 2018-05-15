@@ -6,5 +6,7 @@ Rails.application.routes.draw do
 
   get 'welcome/about'
 
+  resources :topics
+
   root 'welcome#index'
 end
