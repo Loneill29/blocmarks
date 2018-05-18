@@ -6,7 +6,9 @@ Rails.application.routes.draw do
 
   get 'welcome/about'
 
-  resources :topics
+  resources :topics do
+    resources :bookmarks
+  end
 
   root 'welcome#index'
 end
