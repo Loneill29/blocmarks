@@ -1,11 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'bookmarks/show'
-
-  get 'bookmarks/new'
-
-  get 'bookmarks/edit'
-
   devise_for :users
 
   get 'welcome/index'
@@ -15,6 +9,8 @@ Rails.application.routes.draw do
   resources :topics do
     resources :bookmarks
   end
+
+  post :incoming, to: 'incoming#create'
 
   root 'welcome#index'
 end
