@@ -16,5 +16,7 @@ Rails.application.routes.draw do
     resources :bookmarks
   end
 
+  post :incoming, to: 'incoming#create'
+
   root 'welcome#index'
 end
