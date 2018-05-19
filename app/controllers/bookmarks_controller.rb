@@ -15,9 +15,8 @@ before_action :authenticate_user!
   end
 
   def create
-    @bookmark = Bookmark.new(bookmark_params)
     @topic = Topic.find(params[:topic_id])
-    @bookmarks = @topic.bookmarks
+    @bookmark = Bookmark.new(bookmark_params)
     @bookmark.topic = @topic
 
     if @bookmark.save!
