@@ -10,6 +10,7 @@
               <%= link_to bookmark.url, topic_bookmark_path(@topic, bookmark) %>
             </h4>
           </div>
+          <%= render partial: 'likes/like', locals: { topic: @topic, bookmark: bookmark } %>
         </div>
       <% end %>
     </div>

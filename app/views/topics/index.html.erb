@@ -11,6 +11,7 @@
               <ul>
                 <li class="well-sm">
                   <%= bookmark.url %>
+                  <%= render partial: 'likes/like', locals: { topic: @topic, bookmark: bookmark } %>
                 </li>
               </ul>
         </div>
