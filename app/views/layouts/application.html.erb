@@ -21,6 +21,7 @@
       <ul class="nav nav-tabs">
         <li><%= link_to "Home", welcome_index_path %></li>
         <li><%= link_to "Topics", topics_path %></li>
+        <li><%= link_to "My Blocmarks", user_path(current_user) %></li>
       </ul>
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
