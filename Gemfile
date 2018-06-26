@@ -31,7 +31,8 @@ gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem 'figaro'
 gem 'devise'
- gem 'pundit'
+gem 'pundit'
+gem 'haml'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 group :production do

@@ -1,0 +1,14 @@
+%h1
+  Topics #{link_to "New Topic", new_topic_path, class: 'btn btn-success'}
+.row
+  .col-md-12
+    - @topics.each do |topic|
+      .media
+        .media-body
+          %h4.media-heading
+            = link_to topic.title, topic
+          - topic.bookmarks.each do |bookmark|
+            %ul
+              %li.well-sm
+                = bookmark.url
+                = render partial: 'likes/like', locals: { topic: @topic, bookmark: bookmark }

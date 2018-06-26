@@ -1,0 +1,17 @@
+%h1 My Profile
+.row
+  %h4 My Blocmarks
+  .col-md-8
+    - @user_bookmarks.each do |bookmark|
+      %ul
+        = "#{bookmark.topic.title}"
+        %li= link_to bookmark.url
+.row
+  %h4 Liked Blocmarks
+  .col-md-8
+    - @liked_bookmarks.each do |bookmark|
+      %ul
+        = "#{bookmark.topic.title}"
+        %li
+          = link_to bookmark.url
+          = render partial: 'likes/like', locals: { bookmark: bookmark }
