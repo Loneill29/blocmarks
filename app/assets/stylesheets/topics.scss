@@ -1,3 +1,30 @@
 // Place all the styles related to the Topics controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#topics {
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.media-heading a {
+  color: white;
+}
+
+.btn-info {
+  background-color: #451287!important;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.edit-delete {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.likes {
+  padding-top: 10px;
+}
+
+#topic {
+  margin-left: 40px;
+}

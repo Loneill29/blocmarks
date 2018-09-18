@@ -1,12 +1,12 @@
-<h1> Topics <%= link_to "New Topic", new_topic_path, class: 'btn btn-success' %> </h1>
+<h1 class="page-title"> Topics <%= link_to "New Topic", new_topic_path, class: 'btn btn-info' %> </h1>
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12" id="topics">
       <% @topics.each do |topic| %>
       <div class="media">
         <div class="media-body">
-          <h4 class="media-heading">
-             <%= link_to topic.title, topic %>
-          </h4>
+          <h2 class="media-heading">
+          <%= link_to topic.title, topic %>
+          </h2>
               <% topic.bookmarks.each do |bookmark| %>
               <ul>
                 <li class="well-sm">

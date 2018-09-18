@@ -1,21 +1,21 @@
-<h1>My Profile</h1>
-<div class="row">
-  <h4>My Blocmarks</h4>
+<h1 class="page-title">My Profile</h1>
+<div class="row" id="bookmarks">
+  <h2>My Bookmarks</h2>
     <div class="col-md-8">
         <% @user_bookmarks.each do |bookmark| %>
           <ul>
-              <%="#{bookmark.topic.title}"%>
+            <h3><%="#{bookmark.topic.title}"%></h3>
             <li><%= link_to bookmark.url %></li>
           </ul>
         <% end %>
     </div>
 </div>
-<div class="row">
-  <h4>Liked Blocmarks</h4>
+<div class="row" id="bookmarks">
+  <h2>Liked Bookmarks</h2>
     <div class="col-md-8">
       <% @liked_bookmarks.each do |bookmark| %>
         <ul>
-          <%="#{bookmark.topic.title}"%>
+          <h3><%="#{bookmark.topic.title}"%></h3>
           <li>
             <%= link_to bookmark.url %>
             <%= render partial: 'likes/like', locals: { bookmark: bookmark } %>

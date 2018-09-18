@@ -16,3 +16,70 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+body {
+  background-image: radial-gradient(#33e69e, #b98ff0);
+  font-family: 'Quicksand', sans-serif;
+  color: #ffff;
+}
+
+a {
+  color: #451287;
+}
+
+#nav-bar, .nav {
+  background-color: #ffff!important;
+  width: 100%!important;
+  padding-top: 10px;
+  padding-left: 10px;
+  color: #451287!important;
+}
+
+li {
+  padding-left: 10px;
+  font-size: 20px!important;
+  color: #451287!important;
+}
+
+.navbar-link {
+  color: #451287!important;
+}
+
+.page-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn-success {
+  background-color: #451287!important;
+  font-weight: bold;
+}
+
+#edit {
+  background-color: #118858!important;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.login {
+  margin-left: 40px;
+}
+
+.form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#email, #password {
+  margin-bottom: 10px!important;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#signup {
+  margin-top: 20px;
+}
+.sign_up {
+  margin-bottom: 20px;
+}
